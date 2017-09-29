@@ -1,5 +1,15 @@
 {
-  "presets": ["es2015", "react", "stage-2"],
-  "plugins": ["transform-runtime"],
-  "comments": false
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"],
+        "node": "current"
+      },
+      "modules": false,
+      "useBuiltIns": true
+    }]
+  ],
+  "comments": false,
+  "plugins": ["transform-runtime"]
 }
+
